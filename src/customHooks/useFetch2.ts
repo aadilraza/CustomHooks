@@ -30,7 +30,6 @@ export const useFetch2 = <T>({ url, init, processData }: RequestProps<T>) => {
         // Post data to REST API
         const response = await fetch(url, init);
         if (response.status === 201) {
-          debugger;
           const rawData: any = await response.json();
           const processedData = processJson(rawData);
           setData(processedData);

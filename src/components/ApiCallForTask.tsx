@@ -1,8 +1,7 @@
 import { useFetch2 } from '../customHooks/useFetch2';
 import { Task } from '../Model/Task';
 import { useFetchData } from '../customHooks/useFetchData';
-import { useEffect, useState } from 'react';
-// import { usePostData } from './../customHooks/usePostData';
+
 const ApiCallForTask: React.FC = () => {
   // const task: Task = {
   //   name: 'Go for Walk',

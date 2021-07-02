@@ -13,7 +13,6 @@ export const useFetch = <T>({
 }: RequestProps<T>) => {
   // Response state
   const [data, setData] = useState<T>();
-  debugger;
   // Turn objects into strings for useCallback & useEffect dependencies
   const [stringifiedUrl, stringifiedInit] = [
     JSON.stringify(url),

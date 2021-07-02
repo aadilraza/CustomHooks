@@ -1,6 +1,8 @@
 import CheckWindow from './components/CheckWindow';
 import Count from './components/Count';
-import ApiCallForTask from './components/ApiCallForTask';
+// import ApiCallForTask from './components/ApiCallForTask';
+// import ApiCallByFunc from "./components/ApiCallByFunc";
+ import NewMethodTest from "./components/NewMethodTest";
 
 const App = () => {
   return (
@@ -19,7 +21,15 @@ const App = () => {
 
       {/* <div style={{ paddingTop: '12px' }}>
         <ApiCallForTask />
-      </div> */}
+      </div> */} 
+      
+      {/* <div style={{ paddingTop: '12px' }}>
+        <ApiCallByFunc />
+      </div>   */}
+      
+       <div style={{ paddingTop: '12px' }}>
+        <NewMethodTest />
+      </div>
     </>
   );
 };
