@@ -1,6 +1,6 @@
 import CheckWindow from './components/CheckWindow';
 import Count from './components/Count';
-import ApiCall from './components/ApiCall';
+import ApiCallForTask from './components/ApiCallForTask';
 
 const App = () => {
   return (
@@ -13,9 +13,13 @@ const App = () => {
         <Count />
       </div>
 
-      <div style={{ paddingTop: '12px' }}>
+      {/* <div style={{ paddingTop: '12px' }}>
         <ApiCall />
-      </div>
+      </div> */}
+
+      {/* <div style={{ paddingTop: '12px' }}>
+        <ApiCallForTask />
+      </div> */}
     </>
   );
 };

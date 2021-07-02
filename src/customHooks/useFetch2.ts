@@ -6,14 +6,9 @@ interface RequestProps<T> {
   processData?: (data: any) => T;
 }
 
-export const useFetch = <T>({
-  url,
-  init,
-  processData,
-}: RequestProps<T>) => {
+export const useFetch2 = <T>({ url, init, processData }: RequestProps<T>) => {
   // Response state
   const [data, setData] = useState<T>();
-  debugger;
   // Turn objects into strings for useCallback & useEffect dependencies
   const [stringifiedUrl, stringifiedInit] = [
     JSON.stringify(url),
@@ -32,11 +27,10 @@ export const useFetch = <T>({
     // Define asynchronous function
     const fetchApi = async () => {
       try {
-        // Fetch data from REST API
+        // Post data to REST API
         const response = await fetch(url, init);
-
-        if (response.status === 200) {
-          // Extract json
+        if (response.status === 201) {
+          debugger;
           const rawData: any = await response.json();
           const processedData = processJson(rawData);
           setData(processedData);

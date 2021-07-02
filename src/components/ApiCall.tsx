@@ -1,7 +1,7 @@
-import { useFetch2 } from '../customHooks/useFetch';
+import { useFetch } from '../customHooks/useFetch';
 import { Country} from '../Model/Country';
 const ApiCall: React.FC = () => {
-  const data = useFetch2<[Country]>({
+  const data = useFetch<[Country]>({
     url: 'https://restcountries.eu/rest/v2/all;',
   });
 
